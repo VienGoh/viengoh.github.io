@@ -38,6 +38,23 @@
       font-style: italic;
       color: #555;
     }
+    .navbar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .navbar a {
+      text-decoration: none;
+      background: #004578;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .navbar a:hover {
+      background: #0063b1;
+    }
   </style>
 </head>
 <body>
@@ -48,7 +65,14 @@
     <p>I'm a passionate .NET Developer with a strong foundation in VB.NET, C#, and .NET Core. I bring a practical understanding of both frontend and backend development, database management, and user-centered design principles. I thrive in environments where I can grow, face challenges, and contribute to impactful software solutions.</p>
   </header>
 
-  <section>
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="https://wa.me/6282184303714" target="_blank">API (WhatsApp)</a>
+  </nav>
+
+  <section id="about">
     <h2>🧰 Technical Skills</h2>
     <ul>
       <li><strong>Languages & Frameworks:</strong> VB.NET, C#, .NET Core</li>
@@ -56,16 +80,14 @@
       <li><strong>Development Areas:</strong> Backend development, ERP integration, UI/UX design, Desktop Applications</li>
       <li><strong>ERP Experience:</strong> Microsoft Dynamics NAV</li>
     </ul>
-  </section>
 
-  <section>
     <h2>🎓 Education</h2>
     <p><strong>Bachelor of Computer Science</strong><br>
     STMIK TIME – Medan, Sumatera Utara<br>
-    <em>2020 – 2024</em></p>
+    <em>2020 – 2024 (Expected)</em></p>
   </section>
 
-  <section>
+  <section id="experience">
     <h2>💼 Experience</h2>
 
     <h3>IT Programmer – PT. Musim Mas</h3>
@@ -92,7 +114,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>🧪 Project Gallery</h2>
     <h3>QC System</h3>
     <p>A quality control application that validates product specifications and determines pass/reject status using predefined criteria.<br>
